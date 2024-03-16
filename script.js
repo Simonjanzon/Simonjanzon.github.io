@@ -1,3 +1,10 @@
+document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        document.getElementById('waves').pause();
+    } else {
+        document.getElementById('waves').play();
+    }
+});
 // Set the date and time for the countdown (year, month (0-based), day, hour, minute, second)
 const countdownDate = new Date(2024, 7, 31, 15, 0, 0).getTime();
 
