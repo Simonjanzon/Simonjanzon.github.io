@@ -1,9 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    background-color: #121212; /* Dark gray background */
+    color: #fff; /* White text color */
+    padding: 50px;
 }
 
 #countdown {
-    font-size: 36px;
+    font-size: 72px; /* Larger font size */
     margin-top: 50px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* Soft shadow effect */
+    background-image: linear-gradient(45deg, #ff8a00, #e52e71); /* Gradient background */
+    -webkit-background-clip: text; /* Clip text to the background */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
 }
