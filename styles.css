@@ -1,8 +1,8 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Captain', sans-serif;
     text-align: center;
     background-color: #121212; /* Dark gray background */
-    color: #1E90FF; /* Ocean blue text color */
     padding: 50px;
 }
 
