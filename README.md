@@ -1,1 +1,2 @@
-# Simonjanzon.github.io
+# countdown-invitation
+Repo for countdown invitation page
