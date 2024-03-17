@@ -24,10 +24,23 @@ const countdown = setInterval(() => {
         document.getElementById('countdown').innerHTML = 'EXPIRED';
     }
 }, 1000);
-document.addEventListener("visibilitychange", function() {
-    if (document.hidden) {
-        document.getElementById('waves').pause();
-    } else {
-        document.getElementById('waves').play();
-    }
-});
+
+function startBackgroundMusic() {
+    // Get the audio element
+    const waves = document.getElementById('waves');
+    
+    // Play the background music
+    waves.play();
+    
+    // Remove the onclick attribute to prevent repeated playback
+    document.getElementById('countdown').removeAttribute('onclick');
+    
+    // Pause the background music when the page is hidden
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+            waves.pause();
+        } else {
+            waves.play();
+        }
+    });
+}
