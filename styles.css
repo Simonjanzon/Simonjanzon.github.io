@@ -15,3 +15,56 @@ body {
     -webkit-background-clip: text; /* Clip text to the background */
     -webkit-text-fill-color: transparent; /* Make text transparent */
 }
+
+#end-date {
+    font-size: 72px; /* Larger font size */
+    margin-top: 50px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* Soft shadow effect */
+    background-image: linear-gradient(135deg, #00A6ED, #0090C0); /* Gradient background */
+    -webkit-background-clip: text; /* Clip text to the background */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+#end-date.fly-in {
+    color: white; /* Set text color to white */
+    opacity: 1; /* Show when fly-in class is applied */
+    animation: flyIn 0.5s forwards; /* Apply fly-in animation */
+}
+
+@keyframes flyIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+#wave-image {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    width: 1000px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position fixed to keep it in the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontally to center */
+    padding: 10px;
+}
+
+#wave-image.fade-in {
+    opacity: 1; /* Show when fade-in class is applied */
+    animation: waveFadeInOut 8s infinite; /* Apply fade-in and fade-out animation */
+}
+
+@keyframes waveFadeInOut {
+    0%, 100% {
+        opacity: 0; /* Fully transparent at start and end */
+    }
+    50% {
+        opacity: 1; /* Fully opaque in the middle */
+    }
+}
+
