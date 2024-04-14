@@ -68,3 +68,20 @@ body {
     }
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust countdown margin for smaller screens */
+    #countdown {
+        margin-top: 20px;
+    }
+    #wave-image {
+        max-width: 768px;
+    }
+
+    /* Adjust font size for end date and place info for smaller screens */
+    #end-date,
+    #countdown,
+    #place-info {
+        font-size: 16px;
+    }
+}
