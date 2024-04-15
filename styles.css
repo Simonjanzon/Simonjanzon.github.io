@@ -16,7 +16,8 @@ body {
     -webkit-text-fill-color: transparent; /* Make text transparent */
 }
 
-#end-date {
+#end-date,
+#more-info {
     font-size: 72px; /* Larger font size */
     margin-top: 50px;
     font-weight: bold;
@@ -28,7 +29,11 @@ body {
     transition: opacity 0.5s ease-in-out; /* Smooth transition */
 }
 
-#end-date.fly-in {
+#more-info {
+    font-size: 36px;
+}
+
+#end-date.fly-in, #more-info.fly-in {
     color: white; /* Set text color to white */
     opacity: 1; /* Show when fly-in class is applied */
     animation: flyIn 0.5s forwards; /* Apply fly-in animation */
@@ -80,6 +85,7 @@ body {
 
     /* Adjust font size for end date and place info for smaller screens */
     #end-date,
+    #more-info,
     #countdown,
     #place-info {
         font-size: 16px;
