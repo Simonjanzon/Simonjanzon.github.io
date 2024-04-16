@@ -4,6 +4,10 @@ body {
     text-align: center;
     background-color: #121212; /* Dark gray background */
     padding: 50px;
+    width: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 #countdown {
@@ -58,6 +62,9 @@ body {
     transform: translateX(-50%); /* Adjust horizontally to center */
     padding: 10px;
 }
+* {
+    box-sizing: border-box;
+}
 
 #wave-image.fade-in {
     opacity: 1; /* Show when fade-in class is applied */
@@ -81,12 +88,6 @@ body {
     }
     #wave-image {
         max-width: 768px;
-    }
-    body {
-        width: 100%;
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     /* Adjust font size for end date and place info for smaller screens */
