@@ -55,15 +55,12 @@ body {
 #wave-image {
     opacity: 0; /* Initially hidden */
     transition: opacity 0.5s ease-in-out; /* Smooth transition */
-    width: 1000px; /* Adjust width as needed */
+    width: 1200px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
     position: absolute; /* Position fixed to keep it in the viewport */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust horizontally to center */
     padding: 10px;
-}
-* {
-    box-sizing: border-box;
 }
 
 #wave-image.fade-in {
