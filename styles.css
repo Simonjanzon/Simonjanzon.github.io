@@ -3,7 +3,7 @@ body {
     font-family: 'Captain', sans-serif;
     text-align: center;
     background-color: #121212; /* Dark gray background */
-    padding: 50px;
+    padding: 10px;
     width: 100%;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -12,7 +12,8 @@ body {
 
 #countdown {
     font-size: 72px; /* Larger font size */
-    margin-top: 50px;
+    margin-bottom: 0;
+    margin-top: 30px;
     font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* Soft shadow effect */
     background-image: linear-gradient(135deg, #00A6ED, #0090C0); /* Gradient background */
@@ -22,25 +23,18 @@ body {
 
 #end-date,
 #more-info {
-    font-size: 72px; /* Larger font size */
-    margin-top: 50px;
+    font-size: 36px; /* Larger font size */
+    margin-top: 10px;
     font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* Soft shadow effect */
     background-image: linear-gradient(135deg, #00A6ED, #0090C0); /* Gradient background */
     -webkit-background-clip: text; /* Clip text to the background */
     -webkit-text-fill-color: transparent; /* Make text transparent */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    opacity: 1; /* Initially hidden */
 }
 
 #more-info {
     font-size: 36px;
-}
-
-#end-date.fly-in, #more-info.fly-in {
-    color: white; /* Set text color to white */
-    opacity: 1; /* Show when fly-in class is applied */
-    animation: flyIn 0.5s forwards; /* Apply fly-in animation */
 }
 
 @keyframes flyIn {
