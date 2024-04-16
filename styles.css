@@ -87,7 +87,7 @@ body {
         margin-top: 20px;
     }
     #wave-image {
-        max-width: 768px;
+        max-width: 100%;
     }
 
     /* Adjust font size for end date and place info for smaller screens */
