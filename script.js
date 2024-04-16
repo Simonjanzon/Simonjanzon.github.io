@@ -45,12 +45,12 @@ function startBackgroundMusic() {
     });
 }
 document.addEventListener('DOMContentLoaded', function() {
-    const countdown = document.getElementById('countdown');
+    const body = document.getElementById('body');
     const endDate = document.getElementById('end-date');
     const waveImage = document.getElementById('wave-image');
     const moreInfo = document.getElementById('more-info');
 
-    countdown.addEventListener('click', function() {
+    body.addEventListener('click', function() {
         endDate.classList.toggle('fly-in');
         moreInfo.classList.toggle('fly-in');
         waveImage.classList.toggle('fade-in');
