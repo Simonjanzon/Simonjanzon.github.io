@@ -85,9 +85,12 @@ body {
 
     /* Adjust font size for end date and place info for smaller screens */
     #end-date,
-    #more-info,
     #countdown,
     #place-info {
         font-size: 24px;
+    }
+
+    #more-info {
+        font-size: 16px;
     }
 }
