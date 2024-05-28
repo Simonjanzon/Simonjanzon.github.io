@@ -67,6 +67,15 @@ body {
     }
 }
 
+#randomGifDisplay {
+    display: none; 
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position fixed to keep it in the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontally to center */
+    padding: 10px;}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     /* Adjust countdown margin for smaller screens */

@@ -58,3 +58,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const gifLibrary = [
+      'gifs/simon1.gif',
+      'gifs/simon2.gif',
+      'gifs/simon3.gif'
+    ];
+  
+    const randomGifButton = document.getElementById('randomGifButton');
+    const gifDisplay = document.getElementById('randomGifDisplay');
+  
+    randomGifButton.addEventListener('click', () => {
+      const randomIndex = Math.floor(Math.random() * gifLibrary.length);
+      const selectedGif = gifLibrary[randomIndex];
+  
+      gifDisplay.src = selectedGif;
+      gifDisplay.style.display = 'block';
+    });
+  });
+
