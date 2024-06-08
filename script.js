@@ -62,7 +62,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const gifLibrary = [
       'gifs/simon1.gif',
       'gifs/simon2.gif',
-      'gifs/simon3.gif'
+      'gifs/simon3.gif',
+      'gifs/simon4.gif',
+      'gifs/simon4.gif',
+      'gifs/erik1.gif',
+      'gifs/erik2.gif',
+      'gifs/johan-erik.gif',
+      'gifs/johan1.gif',
+      'gifs/johan2.gif',
+      'gifs/johan3.gif',
+      'gifs/kalle1.gif',
+      'gifs/kalle2.gif',
+      'gifs/mrgreen.gif',
+
     ];
   
     const randomGifButton = document.getElementById('randomGifButton');
