@@ -25,39 +25,6 @@ const countdown = setInterval(() => {
     }
 }, 1000);
 
-function startBackgroundMusic() {
-    // Get the audio element
-    const waves = document.getElementById('waves');
-    
-    // Play the background music
-    waves.play();
-    
-    // Remove the onclick attribute to prevent repeated playback
-    document.getElementById('countdown').removeAttribute('onclick');
-    
-    // Pause the background music when the page is hidden
-    document.addEventListener("visibilitychange", function() {
-        if (document.hidden) {
-            waves.pause();
-        } else {
-            waves.play();
-        }
-    });
-}
-document.addEventListener('DOMContentLoaded', function() {
-    const body = document.getElementById('body');
-    const endDate = document.getElementById('end-date');
-    const waveImage = document.getElementById('wave-image');
-    const moreInfo = document.getElementById('more-info');
-
-    body.addEventListener('click', function() {
-        endDate.classList.toggle('fly-in');
-        moreInfo.classList.toggle('fly-in');
-        waveImage.classList.toggle('fade-in');
-
-    });
-});
-
 document.addEventListener('DOMContentLoaded', () => {
     const gifLibrary = [
       'gifs/simon1.gif',
