@@ -1,36 +1,62 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Captain', sans-serif;
     text-align: center;
-    background-color: #121212; /* Dark gray background */
+    /*background-color: #121212;*/ /* Dark gray background */
     padding: 10px;
     width: 100%;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: 
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust the RGBA values to control the transparency */
+                url('grappar.JPG') no-repeat center center/cover;
 }
-
+button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    background-image: linear-gradient(135deg, #00A6ED, #0090C0); /* Gradient background */
+    color: #fff;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 #countdown {
-    font-size: 72px; /* Larger font size */
+    font-size: 100px; /* Larger font size */
     margin-bottom: 20px;
     margin-top: 30px;
     font-weight: bold;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* Soft shadow effect */
-    background-image: linear-gradient(135deg, #00A6ED, #0090C0); /* Gradient background */
-    -webkit-background-clip: text; /* Clip text to the background */
-    -webkit-text-fill-color: transparent; /* Make text transparent */
+    color:#fff
 }
 
-#end-date,
-#more-info {
+#end-date {
     font-size: 32px; /* Larger font size */
+    margin-bottom: 20px;
     margin-top: 20px;
     font-weight: bold;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* Soft shadow effect */
-    background-image: linear-gradient(135deg, #00A6ED, #0090C0); /* Gradient background */
-    -webkit-background-clip: text; /* Clip text to the background */
-    -webkit-text-fill-color: transparent; /* Make text transparent */
-    opacity: 1; /* Initially hidden */
+    color:#fff
+}
+
+#more-info {
+    font-size: 32px; /* Larger font size */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color:#fff; 
+    font-weight: bold;
+}
+#long-text-section{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:#fff;
 }
 
 @keyframes flyIn {
